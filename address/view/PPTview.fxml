@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="889.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="address.view.PPTviewController">
+   <bottom>
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <Button fx:id="bigger" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#Bigger" text="放大">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/放大_zoom-in.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="smaller" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#Smaller" text="缩小">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/缩小_zoom-out.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="begin" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#Begin" text="开始播放">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/播放_play.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="stop" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#Stop" text="暂停播放">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/暂停_pause-one.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="rotate" mnemonicParsing="false" onAction="#Rotate" prefHeight="42.0" prefWidth="46.0">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/7a2c31a3e06cb26c58306754e799eee.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <Pagination fx:id="pagination" maxHeight="586.0" maxWidth="811.0" prefHeight="586.0" prefWidth="811.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
